@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+</head>
+
+<body>
+    <form action="index.html" method="get">
+        <label for="fname" tabindex="0">Nombre:</label>
+        <input type="text" id="fname" name="fname" required />
+        <br />
+        <br />
+        <label for="lname" tabindex="1">Apellidos:</label>
+        <input type="text" id="lname" name="lname" required />
+        <br />
+        <br />
+        <label for="asunto" tabindex="2">Asunto:</label>
+        <input type="text" id="asunto" name="asunto" disabled />
+        <br />
+        <br />
+        <label for="ciudad" tabindex="3">Ciudad:</label>
+        <input type="text" name="ciudad" value="Barcelona" readonly />
+        <br />
+        <br />
+        <label for="tel" tabindex="4">Teléfono:</label>
+        <input type="tel" id="tel" name="telefono" pattern="[0-9]{9}" required placeholder="(Código de área) Número" />
+        <br />
+        <br />
+        <label for="email" tabindex="5">Tú email:</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+        <br />
+        <label for="mylist" tabindex="6">Elija el regalo:</label>
+        <input type="text" list="mylist" />
+        <datalist id="mylist">
+            <option label="Libro" value="Libro"></option>
+            <option label="SSD" value="SSD"></option>
+            <option label="Poemario" value="Poemario"></option>
+        </datalist>
+        <br />
+        <br />
+        <label for="envio"tabindex="6">Tipo de envío</label>
+        <select id="envio" required>
+            <option value="" selected>--seleccione--</option>
+            <option value="volvo">simple</option>
+            <option value="saab">seguimiento</option>
+            <option value="vw">personalizado</option>
+        </select>
+        <br />
+        <p>Horario de envío:</p>
+        <label for="contactm">Mañana</label>
+        <input type="radio" id="contactm"
+        name="contact" value="mañana">
+ <label for="contactChoice2">Noche</label>
+ <input type="radio" id="contactn"
+        name="contact" value="noche"><br/><br/>
+    
+        <label for="msg" tabindex="7">Mensaje:</label>
+        <textarea id="msg" name="user_message" placeholder="Si desea puede poner una indicación extra"></textarea>
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+
+</html>
